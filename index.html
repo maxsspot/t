@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+		<title>History Thing</title>
+	</head>
+	<body>
+        <div id = "jokes">
+            <br>
+            <h1>Jokes</h1>
+            <br>
+            <p>What did the plastic surgeon say to his first patient?<b id = "answers">I picked your eye</b></p>
+            <p>What did the mathematician say after he invented the number 0?<b id = "answers2">Nothing</b></p>
+            <br>
+            <button id = "back" onclick = "jAmsa()">Close jokes</button>
+        </div>
+        <div id = "one">
+            <br>
+            <h1>Doctors</h1>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.em3-vvst2aGAGEQ3tJc64AAAAA%26pid%3DApi&f=1" />
+            <br>
+            <br>
+            <p>Shushruta doing the first ever plastic surgery.</p>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.CkSEr63n7uPezfRj_q84ewHaHa%26pid%3DApi&f=1" />
+            <br>
+            <br>
+            <p>Gupta doctors invented this scalpel.</p>
+            <br>
+            <button id = "back" onclick = "back()">Go back</button>
+            <br>
+            <br>
+        </div>
+        <div id = "two">
+            <br>
+            <h1>Math</h1>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UPqDt9plUFph0niXeYM40QHaHa%26pid%3DApi&f=1" />
+            <br>
+            <br>
+            <p>Mathemitician invented the number 0 to represent nothing.</p>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Wi4LadS06CyoHFQ2Hx3Y-QHaHa%26pid%3DApi&f=1" />
+            <br>
+            <br>
+            <p>The indian number system for 0-9 are the same ones we used today.</p>
+            <br>
+            <button id = "back" onclick = "back()">Go back</button>
+            <br>
+            <br>
+        </div>
+        <div id = "three">
+            <br>
+            <h1>Science</h1>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.9lZmjVeOjDabf1oAtFSrpwHaEc%26pid%3DApi&f=1" />
+            <br>
+            <br>
+            <p>India scientists mapped the movements of plants and stars.</p>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.catawiki.nl%2Fassets%2F2016%2F9%2F15%2Fe%2F0%2F1%2Fe012888e-7b06-11e6-8a6c-35cd175f3ca8.jpg&f=1&nofb=1" />
+            <br>
+            <br>
+            <p>They figured out you can make tools and weapons from iron.</p>
+            <br>
+            <button id = "back" onclick = "back()">Go back</button>
+            <br>
+            <br>
+        </div>
+        <div id = "four">
+            <br>
+            <h1>Medicine</h1>
+            <br>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIF.%252bqoeyeD5%252bfFH6%252bED4SjZOw%26pid%3DApi&f=1" />
+            <br>
+            <br>
+            <p>Gupta doctors used herbs to cure skin illnesses.</p>
+            <br>
+            <img src = "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F93%2FDhanvantari-at-Ayurveda-expo.jpg%2F212px-Dhanvantari-at-Ayurveda-expo.jpg&sp=1644426890T993e36ffb8ef14cc832fe4efb012452a220ca4b2579fe5b1bccfc8d4a6f6995e" />
+            <br>
+            <br>
+            <p>A practice used to heal and stay in good health using plants.</p>
+            <br>
+            <button id = "back" onclick = "back()">Go back</button>
+            <br>
+            <br>
+        </div>
+        <div id = "nav">
+        <br>
+		<h1>Navigaton</h1>
+        <br>
+        <button onclick = "vocab()">Doctors</button>
+        <button onclick = "math()">Math</button>
+        <br>
+        <button onclick = "science()">Science</button>
+        <button onclick = "medicine()">Medicine</button>
+        </div>
+        <script>
+            function vocab () {
+                document.getElementById ("one").style.display = "block";
+                document.getElementById ("nav").style.display = "none";
+            }
+
+            function math () {
+                document.getElementById ("two").style.display = "block";
+                document.getElementById ("nav").style.display = "none";
+            }
+
+            function science () {
+                document.getElementById ("three").style.display = "block";
+                document.getElementById ("nav").style.display = "none";
+            }
+
+            function back () {
+                document.getElementById ("one").style.display = "none";
+                document.getElementById ("two").style.display = "none";
+                document.getElementById ("three").style.display = "none";
+                document.getElementById ("four").style.display = "none";
+                document.getElementById ("nav").style.display = "block";
+            }
+
+            function medicine () {
+                document.getElementById ("four").style.display = "block";
+                document.getElementById ("nav").style.display = "none";
+            }
+
+            var _0x1b8893=_0x1455;function _0x3a49(){var _0x1b2816=['1CHEyot','style','keydown','1571440dfrwUo','VvZXI','jokes','6081471DLjEiA','feqAI','POQSH','12XbGMdM','3WyUoFh','927538ODHNvK','CMxDo','pHCZt','stener','display','NHkaQ','15610CCwltj','none','10901pPjrVI','answers2','Kolkv','addEventLi','AwPLh','ById','1011885hjOgNP','answers','478532fMiybe','7087552Vlsbwx','vPsVi','TXLmT','getElement','key','Enter','block'];_0x3a49=function(){return _0x1b2816;};return _0x3a49();}function _0x1455(_0x46b803,_0x3080a7){var _0x33690a=_0x3a49();return _0x1455=function(_0x36b3ce,_0x1fd499){_0x36b3ce=_0x36b3ce-(-0x617*0x5+-0xb1b+0x4*0xa9c);var _0x564ba4=_0x33690a[_0x36b3ce];return _0x564ba4;},_0x1455(_0x46b803,_0x3080a7);}(function(_0x3f656b,_0x3f5518){var _0x15b5b1=_0x1455,_0x539591=_0x3f656b();while(!![]){try{var _0x349010=parseInt(_0x15b5b1(0xfb))/(-0x1aa0+-0x2*0x12cd+0x403b)*(-parseInt(_0x15b5b1(0xe3))/(-0x3c6+0x2*-0xeae+-0x4bc*-0x7))+parseInt(_0x15b5b1(0xe2))/(-0x1*0x1e86+-0x105d*0x1+0x105*0x2e)*(parseInt(_0x15b5b1(0xf3))/(0x18b0+-0x248+0x1*-0x1664))+parseInt(_0x15b5b1(0xfe))/(0x1d3f+-0x1*0x1bdf+0x1*-0x15b)*(-parseInt(_0x15b5b1(0x104))/(-0x1fc6+0x31f*0xa+-0x1*-0x96))+parseInt(_0x15b5b1(0xf1))/(0x92f*0x2+-0x1287+-0x30*-0x1)+-parseInt(_0x15b5b1(0xf4))/(-0x1*0x146b+-0xf82+0x23*0x107)+parseInt(_0x15b5b1(0x101))/(-0x2149+-0x1*0xeb1+-0x11*-0x2d3)+-parseInt(_0x15b5b1(0xe9))/(0x822+0x23e5+0x2bfd*-0x1)*(-parseInt(_0x15b5b1(0xeb))/(-0x1a72+-0x6*-0x3e6+0x3d*0xd));if(_0x349010===_0x3f5518)break;else _0x539591['push'](_0x539591['shift']());}catch(_0x38cdbf){_0x539591['push'](_0x539591['shift']());}}}(_0x3a49,-0x6d5c4*0x2+-0x602ad*0x2+-0x21737b*-0x1),document[_0x1b8893(0xee)+_0x1b8893(0xe6)](_0x1b8893(0xfd),function(_0x5e3e25){var _0x679e64=_0x1b8893,_0x503cb6={'VvZXI':function(_0x5c697c,_0x381dee){return _0x5c697c===_0x381dee;},'pHCZt':_0x679e64(0xf9),'POQSH':_0x679e64(0x100),'TXLmT':_0x679e64(0xfa)};_0x503cb6[_0x679e64(0xff)](_0x5e3e25[_0x679e64(0xf8)],_0x503cb6[_0x679e64(0xe5)])&&(document[_0x679e64(0xf7)+_0x679e64(0xf0)](_0x503cb6[_0x679e64(0x103)])[_0x679e64(0xfc)][_0x679e64(0xe7)]=_0x503cb6[_0x679e64(0xf6)]);}),document[_0x1b8893(0xee)+_0x1b8893(0xe6)](_0x1b8893(0xfd),function(_0x1af88b){var _0xd65e21=_0x1b8893,_0x274b68={'CMxDo':function(_0x19ff16,_0xd6947f){return _0x19ff16===_0xd6947f;},'vPsVi':_0xd65e21(0xf2),'feqAI':_0xd65e21(0xfa),'AwPLh':_0xd65e21(0xec)};_0x274b68[_0xd65e21(0xe4)](_0x1af88b[_0xd65e21(0xf8)],'e')&&(document[_0xd65e21(0xf7)+_0xd65e21(0xf0)](_0x274b68[_0xd65e21(0xf5)])[_0xd65e21(0xfc)][_0xd65e21(0xe7)]=_0x274b68[_0xd65e21(0x102)],document[_0xd65e21(0xf7)+_0xd65e21(0xf0)](_0x274b68[_0xd65e21(0xef)])[_0xd65e21(0xfc)][_0xd65e21(0xe7)]=_0x274b68[_0xd65e21(0x102)]);}));function jAmsa(){var _0x40e325=_0x1b8893,_0x2b75bc={'Kolkv':_0x40e325(0x100),'NHkaQ':_0x40e325(0xea)};document[_0x40e325(0xf7)+_0x40e325(0xf0)](_0x2b75bc[_0x40e325(0xed)])[_0x40e325(0xfc)][_0x40e325(0xe7)]=_0x2b75bc[_0x40e325(0xe8)];}
+        </script>
+    <style>
+        * {
+    margin:0;
+    padding:0;
+}
+
+body {
+	font-family:"Oswald", sans-serif;
+    text-align:center;
+    color:white;
+    transition:all 1s;
+    user-select:none;
+    background-color:#36454f;
+}
+
+p {
+    font-size:18px;
+}
+
+img {
+    border-radius:50px;
+    width:200px;
+    border:lightgray solid 1px;
+}
+
+#back {
+    width:125px;
+    height:30px;
+    background-color:grey;
+    border:lightgray solid 1px;
+    border-radius:50px;
+    color:white;
+}
+
+#answers, #answers2 {
+    display:none;
+}
+
+button {
+    font-family:"Oswald", sans-serif;
+    width:175px;
+    height:50px;
+    background-color:skyblue;
+    border:transparent;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:all 1s;
+    margin:3px;
+}
+
+#one, #two, #three, #jokes, #four {
+    transition:all 0.75s;
+    display:none;
+    background-color:black;
+    width:100%;
+    height:999vh;
+}
+    </style>
+  </body>
+</html>
